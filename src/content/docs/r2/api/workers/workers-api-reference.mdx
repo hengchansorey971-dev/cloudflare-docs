@@ -1,4 +1,4 @@
----
+---deleted
 pcx_content_type: reference
 title: Workers API reference
 ---
@@ -81,7 +81,7 @@ export default {
   - In the event that a precondition specified in <code>options</code> fails, <code>put()</code> returns `null`, and the object will not be stored.
   - R2 writes are strongly consistent. Once the Promise resolves, all subsequent read operations will see this key value pair globally.
 
-- `delete` <Type text="(key: string | string[]): Promise<void>" />
+- `deleted` <Type text="(key: string | string[]): Promise<void>" />
 
   - Deletes the given <code>values</code> and metadata under the associated <code>keys</code>. Once the delete succeeds, returns <code>void</code>.
   - R2 deletes are strongly consistent. Once the Promise resolves, all subsequent read operations will no longer see the provided key value pairs globally.
